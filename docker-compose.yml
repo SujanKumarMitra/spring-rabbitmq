@@ -1,0 +1,11 @@
+version: "3"
+services:
+  rabbit:
+    image: "rabbitmq:management"
+    hostname: "spring-boot"
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    environment:
+      RABBITMQ_DEFAULT_USER: "spring-boot"
+      RABBITMQ_DEFAULT_PASS: "spring-boot"
